@@ -17,7 +17,7 @@ def anagram(s):
     for char in string1:
         if char not in string2:
             string1= string1.replace(char,'')
-            
+
         #Ensure that string 1 does not have extra substrings than string 2
         if string1.count(char) > string2.count(char):
             char_count= string1.count(char) - string2.count(char)
@@ -26,9 +26,6 @@ def anagram(s):
 
     return len(string2)- len(string1)
     
-
-print(anagram('xtnipeqhxvafqaggqoanvwkmthtfirwhmjrbphlmeluvoa'))
-
 
 
 
